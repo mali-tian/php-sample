@@ -25,6 +25,22 @@ class Account
     }
   }
 
+  public function login($username, $password)
+  {
+    $encryptedPw = md5($password);
+
+    echo $encryptedPw;
+
+    $query = mysqli_query($this->con, "SELECT * FROM users where username='$username' AND password='$encryptedPw'");
+
+    if (mysqli_num_rows($query) >= 1) {
+      return true;
+    } else {
+      array_push($this->errorArray, Constants::$loginFail);
+      return false;
+    }
+  }
+
   public function getError($error)
   {
     if (!in_array($error, $this->errorArray)) {
@@ -51,7 +67,12 @@ class Account
       return;
     }
 
-    //TODO: check if username exists
+    $checkUsernameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username='$username'");
+
+    if (mysqli_num_rows($checkUsernameQuery) != 0) {
+      array_push($this->errorArray, Constants::$usernameTaken);
+      return;
+    }
   }
 
   private function validateFirstname($firstName)
@@ -82,6 +103,12 @@ class Account
       return;
     }
     //TODO: check the email is not used
+    $checkEmailTaken = mysqli_query($this->con,  "SELECT email FROM users WHERE email='$email'");
+
+    if (mysqli_num_rows($checkEmailTaken) != 0) {
+      array_push($this->errorArray, Constants::$emailTaken);
+      return;
+    }
   }
 
   private function validatePassword($password, $password2)
