@@ -24,7 +24,8 @@ function getInputValue($name)
 <head>
   <title>Sportify</title>
   <link rel="stylesheet" type="text/css" href="assets/css/register.css">
-</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/register.js"></script>
 </head>
 
 <body>
@@ -44,11 +45,11 @@ function getInputValue($name)
             <input id="loginPassword" name="loginPassword" type="password" required>
           </p>
           <button type="submit" name="loginButton">Log in</button>
+          <div class="hasAccountText">
+            <span id="hideLogin">Don't have an acount yet? Signup here.</span>
+          </div>
         </form>
 
-        <div class="hasAccountText">
-          <span id="hideLogin">Don't have an acount yet? Signup here.</span>
-        </div>
 
         <form id="registerForm" action="register.php" method="POST">
           <h2>Create your free account</h2>
@@ -98,12 +99,10 @@ function getInputValue($name)
             <input id="password2" name="password2" type="password" placeholder="Your password" required>
           </p>
           <button type="submit" name="registerButton">Sign up</button>
+          <div class="hasAccountText">
+            <span id="hideRegister">Already have an account? Login here.</span>
+          </div>
         </form>
-
-        <div class="hasAccountText">
-          <span id="hideRegister">Already have an account? Login here.</span>
-        </div>
-
       </div>
     </div>
 </body>
