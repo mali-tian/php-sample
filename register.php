@@ -46,6 +46,10 @@ function getInputValue($name)
           <button type="submit" name="loginButton">Log in</button>
         </form>
 
+        <div class="hasAccountText">
+          <span id="hideLogin">Don't have an acount yet? Signup here.</span>
+        </div>
+
         <form id="registerForm" action="register.php" method="POST">
           <h2>Create your free account</h2>
           <p>
@@ -95,6 +99,11 @@ function getInputValue($name)
           </p>
           <button type="submit" name="registerButton">Sign up</button>
         </form>
+
+        <div class="hasAccountText">
+          <span id="hideRegister">Already have an account? Login here.</span>
+        </div>
+
       </div>
     </div>
 </body>
