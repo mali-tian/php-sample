@@ -79,6 +79,7 @@ body {
   height: 27px;
   line-height: 27px;
   width: 100%;
+  color: #fff;
 }
 
 #inputContainer label {
@@ -108,4 +109,9 @@ body {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+}
+
+#loginForm,
+#registerForm {
+  display: none;
 }
