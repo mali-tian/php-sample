@@ -110,6 +110,12 @@ body {
   font-size: 12px;
   text-align: center;
 }
+#inputContainer .errorMessage {
+  font-size: 13px;
+  color: #07d159;
+  display: block;
+  margin-top: 15px;
+}
 
 .hasAccountText:hover {
   cursor: pointer;
