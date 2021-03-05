@@ -102,13 +102,17 @@ body {
 }
 
 #inputContainer button:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 .hasAccountText {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+}
+
+.hasAccountText:hover {
+  cursor: pointer;
 }
 
 #loginForm,
