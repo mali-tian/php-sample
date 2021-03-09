@@ -168,6 +168,39 @@ html body {
   -ms-flex-direction: column;
 }
 
+#navBarContainer .logo {
+  margin-bottom: 15px;
+}
+
+#navBarContainer .navItemLink .icon {
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 25px;
+}
+
 #navBarContainer .logo img {
   width: 32px;
+}
+
+#navBarContainer .group {
+  border-top: 1px solid #a0a0a0;
+  padding: 10px 0;
+}
+
+#navBarContainer .navItem {
+  position: relative;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+}
+#navBarContainer .navItemLink {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+#navBarContainer .navItemLink:hover {
+  color: #fff;
 }

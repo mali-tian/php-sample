@@ -25,9 +25,35 @@ if (isset($_SESSION['userLoggedIn'])) {
     <div id="topContainer">
       <div id="navBarContainer">
         <nav class="navBar">
+
           <a href="index.php" class="logo">
             <img src="assets/images/icons/logo.png" alt="Logo">
           </a>
+
+          <div class="group">
+
+            <div class="navItem">
+              <a href="search.php" class="navItemLink">Search
+                <img src="assets/images/icons/search.png" alt="Search" class="icon">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="group">
+
+            <div class="navItem">
+              <a href="search.php" class="navItemLink">Broswer</a>
+            </div>
+            <div class="navItem">
+              <a href="search.php" class="navItemLink">Your music</a>
+            </div>
+
+            <div class="navItem">
+              <a href="search.php" class="navItemLink">Taylor Swift</a>
+            </div>
+          </div>
+
         </nav>
       </div>
     </div>
