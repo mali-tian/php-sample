@@ -25,6 +25,11 @@ html body {
   min-width: 180px;
 }
 
+#nowPlayingRight {
+  position: relative;
+  margin-top: 16px;
+}
+
 #nowPlayingCenter {
   display: flex;
   flex-direction: column;
@@ -35,6 +40,7 @@ html body {
 
 #nowPlayingBar .content {
   width: 100%;
+  height: 57px;
 }
 
 .playerControls .buttons {
@@ -96,4 +102,12 @@ html body {
 
 .playbackBar .progressBar {
   margin-top: 3px;
+}
+
+#nowPlayingLeft .albumArtWork {
+  height: 100%;
+  max-width: 57px;
+  margin-right: 15px;
+  float: left;
+  background-size: cover;
 }
