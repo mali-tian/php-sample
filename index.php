@@ -28,6 +28,14 @@ if (isset($_SESSION['userLoggedIn'])) {
           <span class="albumLink">
             <img src="assets/images/samples/square-sample.png" alt="Square" class="albumArtWork">
           </span>
+          <div class="trackInfo">
+            <span class="trackName">
+              <span>Happy Birthday</span>
+            </span>
+            <span class="artistName">
+              <span>Taylor Swift</span>
+            </span>
+          </div>
         </div>
       </div>
       <div id="nowPlayingCenter">
